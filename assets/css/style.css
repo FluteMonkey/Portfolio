@@ -10,8 +10,10 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--navy);
+    font-family: helvetica, arial, sans-serif;
 }
+/* Header section */
 header {
     padding: 20px 35px;
     background-color: var(--navy);
@@ -41,4 +43,54 @@ header nav ul li a {
     font-size: 1.55vw;
     text-decoration: none;
     color: #665A00;
+}
+ 
+/*general section style */
+
+section {
+    padding: 45px;
+    background-color: #665A00;
+}
+.section-title {
+    font-size: 50px;
+    border-right: 3px solid;
+    padding-right: 15px;
+    margin: 0 25px 0 auto;
+    border-color: var(--blue);
+    width: 35%;
+    text-align: right;
+}
+
+/*about me section */
+
+.intro p {
+    font-size: 20px;
+    color: var(--baby-blue);
+}
+
+/* Portfolio section */
+
+.workspace {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card #run-buddy{
+    background-image: url(./assets/images/hero-bg.jpg);
+}
+.card h3 {
+    background-color: var(--baby-blue);
+}
+.card p {
+    background-color: var(--baby-blue);
+}
+
+.flex-colomn {
+    display: flex;
+    justify-content: space-between;
 }
