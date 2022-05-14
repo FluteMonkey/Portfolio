@@ -72,25 +72,44 @@ section {
 
 .workspace {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .portfolio {
+    height: 100vh;
+    min-width: 200vh;
     display: flex;
-    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+    background-size: cover;
+    background-position: center;
 }
-
-.card #run-buddy{
-    background-image: url(./assets/images/hero-bg.jpg);
+#run-buddy{
+    background-image: url("../images/hero-bg.jpg");
 }
-.card h3 {
-    background-color: var(--baby-blue);
-}
-.card p {
-    background-color: var(--baby-blue);
-}
-
 .flex-colomn {
     display: flex;
     justify-content: space-between;
+}
+.contact-info div nav{
+    margin: 7px 0;
+    align-items: left;
+}
+.contact-info div nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between left;
+    align-items: left;
+    list-style: none;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+.contact-info div nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-decoration: none;
+    color: var(--blue);
 }
