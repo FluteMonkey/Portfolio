@@ -49,7 +49,7 @@ header nav ul li a {
 
 section {
     padding: 45px;
-    background-color: #665A00;
+    background-color: #f8f8ff;
 }
 .section-title {
     font-size: 50px;
@@ -76,22 +76,44 @@ section {
 }
 
 .portfolio {
-    height: 100vh;
-    min-width: 200vh;
     display: flex;
-    flex: 1;
     align-items: center;
     justify-content: center;
-    padding: 10vh;
-    background-size: cover;
-    background-position: center;
+    flex-wrap: wrap;
 }
-#run-buddy{
-    background-image: url("../images/hero-bg.jpg");
+.card {
+    position: relative;
+    border: 1vh solid var(--baby-blue);
+}
+.card img {
+    max-width: 150vh;
+    max-height: auto;
+    display: block;
+    filter: brightness(33%)
+}
+.card:hover img {
+    filter: brightness(100%)
+}
+.inner {
+    position: absolute;
+    bottom: 5vh;
+    background-color: var(--baby-blue);
+}
+#coming-soon {
+    flex-shrink: 3;
+}
+.secondary {
+    max-width: 75vh;
+    max-height: auto;
+}
+.secondary img {
+    max-width: 70vh;
+    max-height: auto;
+    margin: 0 0 auto auto;
 }
 .flex-colomn {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .contact-info div nav{
     margin: 7px 0;
